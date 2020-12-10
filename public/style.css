@@ -61,7 +61,7 @@ font-family: 'Lato', sans-serif;
 }
 
 button{
-  display: inline-block;
+  justify-content: space-around;
 }
 
 .wrapper {
