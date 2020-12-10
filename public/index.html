@@ -9,6 +9,13 @@
       integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrBA-BFDn-pRnv1tdx-iQMNCFSAsX3kFg&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    
   </head>
   <body>
     <div class = "header">
@@ -18,31 +25,31 @@
       <div class="container flex-outer">
         <div class="header">
         </div>
-        <form>
           <button
             id = "AboutButton"
             type="reset"
             class="resetButton"
             name="resetButton"
           >About Page</button>
-        </form>
-        <form>
           <button
             id = "HomeButton"
             type="reset"
             class="resetButton"
             name="resetButton"
           >Home/Map</button>
-        </form>
-        <form>
           <button
             id = "DocButton"
             type="reset"
             class="resetButton"
             name="resetButton"
           >Documentation</button>
-        </form>
       </div>
+    </div>
+
+    <div id="map">
+
+    </div>
+
     <script src="script.js"></script>
     <script src="canvasjs.min.js"></script>
 
@@ -62,10 +69,6 @@
       document.getElementById("AboutButton").onclick = function () {
           location.href = "https://team3inst377finalproject.herokuapp.com/about.html";
       };
-    </script>
-
-    <script defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrBA-BFDn-pRnv1tdx-iQMNCFSAsX3kFg&libraries=visualization&callback=initMap">
     </script>
     
   </body>

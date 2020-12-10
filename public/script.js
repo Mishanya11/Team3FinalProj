@@ -13,29 +13,22 @@ function findMatches(wordtoMatch, stuff){
 
 }
 
+let map, heatmap;
+
 function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: { lat: -33, lng: 151 },
-    disableDefaultUI: true,
+  map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 13,
+    center: { lat: 37.775, lng: -122.434 },
+    mapTypeId: "satellite",
+  });
+  heatmap = new google.maps.visualization.HeatmapLayer({
+    data: getPoints(),
+    map: map,
   });
 }
 
-//or this one. with this one u change the link in server.js fetch to our api link
-//and then obviously u wud change the 'submit' event listener to the 'reset' event listener
-document.body.addEventListener('submit', async (e) => {
-    e.preventDefault(); // this stops whatever the browser wanted to do itself.
-    const form = $(e.target).serializeArray();
-    fetch('/api', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(form)
-    })
-      .then((fromServer) => fromServer.json())
-      .then((jsonFromServer) => runThisWithResultsFromServer(jsonFromServer))
-      .catch((err) => {
-        console.log(err);
-      });
-  });
+function getPoints() {
+  return [
+    new google.maps.LatLng(37.782551, -122.445368)
+  ]
+}
