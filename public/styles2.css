@@ -12,8 +12,9 @@ body {
 }
 
 h1 {
+  width: 500px;
+  margin: 0 auto;
   text-align: center;
-  align-items: center;
   color:#f8f9fa;
   font-family: 'Lato', sans-serif;
   border-radius: 35px;
