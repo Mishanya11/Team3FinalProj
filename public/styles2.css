@@ -16,7 +16,7 @@ h1 {
   align-items: center;
   color:#f8f9fa;
   font-family: 'Lato', sans-serif;
-  border-radius: 25px;
+  border-radius: 35px;
   border: 2px solid #f8f9fa;
   font-size: 5rem;
   font-weight: 800;
@@ -28,7 +28,7 @@ h1 {
 
 h2 {
     font-family: 'Lato', sans-serif;
-    border-radius: 25px;
+    border-radius: 35px;
     border: 2px solid #f8f9fa;
     font-size: 4rem;
     text-align: center;
@@ -45,7 +45,7 @@ font-family: 'Lato', sans-serif;
 }
 
 .flex-outer button{
-border-radius: 25px;
+border-radius: 35px;
 border: 2px solid #f8f9fa;
 color: #227ad3;
 font-family: 'Lato', sans-serif;
