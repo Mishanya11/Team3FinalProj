@@ -13,12 +13,22 @@ function findMatches(wordtoMatch, stuff){
 
 }
 
+let map, heatmap;
+
 function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: { lat: -33, lng: 151 },
-    disableDefaultUI: true,
+  map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 13,
+    center: { lat: 37.775, lng: -122.434 },
+    mapTypeId: "satellite",
   });
+  heatmap = new google.maps.visualization.HeatmapLayer({
+    data: getPoints(),
+    map: map,
+  });
+}
+
+function toggleHeatmap() {
+  heatmap.setMap(heatmap.getMap() ? null : map);
 }
 
 //or this one. with this one u change the link in server.js fetch to our api link
