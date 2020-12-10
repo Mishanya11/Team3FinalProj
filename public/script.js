@@ -1,4 +1,4 @@
-const endpoint = "https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json";
+const endpoint = "https://data.princegeorgescountymd.gov/resource/wb4e-w4nf.json";
 const stuff = [];
 
 fetch (endpoint)
