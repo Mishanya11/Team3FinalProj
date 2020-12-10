@@ -1,9 +1,11 @@
 /*CSS*/
 body {
-    background: #adb5bd;
+    background: #212529;
+    color: #f8f9fa;
+    
   }
   h1 {
-    color:#212529;
+    color:#f8f9fa;
     font-family: 'Lato', sans-serif;
   }
 button {
