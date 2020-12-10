@@ -17,17 +17,15 @@ body {
 }
 
 h1 {
+  width: 500px;
+  margin: 0 auto;
   text-align: center;
-  align-items: center;
   color:#f8f9fa;
   font-family: 'Lato', sans-serif;
   border-radius: 35px;
   border: 2px solid #f8f9fa;
   font-size: 4.5rem;
-  font-weight: 800;
-  margin-left: 200px;
-  margin-right: 200px;
-  padding-top: 0px;
+
 }
 
 h2 {
