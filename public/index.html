@@ -20,6 +20,7 @@
         </div>
         <form>
           <button
+            id = "AboutButton"
             type="reset"
             class="resetButton"
             name="resetButton"
@@ -27,6 +28,7 @@
         </form>
         <form>
           <button
+            id = "HomeButton"
             type="reset"
             class="resetButton"
             name="resetButton"
@@ -34,6 +36,7 @@
         </form>
         <form>
           <button
+            id = "DocButton"
             type="reset"
             class="resetButton"
             name="resetButton"
@@ -42,6 +45,12 @@
       </div>
     <script src="script.js"></script>
     <script src="canvasjs.min.js"></script>
+
+    <script type="text/javascript">
+      document.getElementById("DocButton").onclick = function () {
+          location.href = "https://team3inst377finalproject.herokuapp.com/documentation.html";
+      };
+    </script>
 
   </body>
 </html>
