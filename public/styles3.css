@@ -22,7 +22,7 @@ p {
   color: #f8f9fa;
   font-family: 'Lato', sans-serif;
 }
-button {
+/* button {
     border-radius: 25px;
     border: 2px solid #f8f9fa;
     color: #212529;
@@ -34,6 +34,28 @@ button {
     display: inline-block;
     font-size: 16px;
     display: table-cell;
-    vertical-align: bottom;
+    vertical-align: bottom; */
     
+} */
+
+.wrapper {
+
 }
+
+
+.flex-outer button{
+  border-radius: 25px;
+  border: 2px solid #f8f9fa;
+  color: #212529;
+  font-family: 'Lato', sans-serif;
+  padding: 15px 32px;
+  text-align: center;
+  text-align: space-between;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+
