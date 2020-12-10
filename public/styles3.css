@@ -28,11 +28,6 @@ p {
   color: #f8f9fa;
   font-family: 'Lato', sans-serif;
 }
-.wrapper {
-  display:flex;
-  vertical-align: bottom;
-  align-items: center;
-}
 
 .flex-outer button{
   border-radius: 25px;
