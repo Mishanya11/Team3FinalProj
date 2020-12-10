@@ -13,6 +13,14 @@ function findMatches(wordtoMatch, stuff){
 
 }
 
+function initMap() {
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: { lat: -33, lng: 151 },
+    disableDefaultUI: true,
+  });
+}
+
 //or this one. with this one u change the link in server.js fetch to our api link
 //and then obviously u wud change the 'submit' event listener to the 'reset' event listener
 document.body.addEventListener('submit', async (e) => {
