@@ -8,6 +8,10 @@ body {
     color:#f8f9fa;
     font-family: 'Lato', sans-serif;
     text-align: center;
+    border-radius: 25px;
+    border: 2px solid #f8f9fa;
+    width: 100px;
+    height: 60px;
   }
   h2 {
     font-family: 'Lato', sans-serif;
