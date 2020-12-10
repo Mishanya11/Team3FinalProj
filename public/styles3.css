@@ -5,9 +5,9 @@ body {
     
   }
   h1 {
+    text-align: center;
     color:#f8f9fa;
     font-family: 'Lato', sans-serif;
-    text-align: center;
     border-radius: 25px;
     border: 2px solid #f8f9fa;
     width: 100px;
