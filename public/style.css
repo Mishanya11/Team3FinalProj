@@ -14,13 +14,18 @@ body {
 
 h1 {
   text-align: center;
+  align-items: center;
   color:#f8f9fa;
   font-family: 'Lato', sans-serif;
   border-radius: 35px;
   border: 2px solid #f8f9fa;
-  width: 100px;
-  height: 60px;
+  font-size: 5rem;
+  font-weight: 800;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 0px;
 }
+
 h2 {
   font-family: 'Lato', sans-serif;
   border-radius: 35px;
