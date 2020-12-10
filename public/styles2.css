@@ -9,7 +9,6 @@ body {
   margin-bottom: 10px;
   display: flex;
   flex-flow: row wrap;
-  padding: 1%;
 }
 
 h1 {
@@ -19,8 +18,10 @@ h1 {
   border-radius: 25px;
   border: 2px solid #f8f9fa;
   font-size: 5rem;
+  font-weight: 800;
   margin-left: 200px;
   margin-right: 200px;
+  padding-top: 0px;
   
 }
 
