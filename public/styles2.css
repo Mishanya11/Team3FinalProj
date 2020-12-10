@@ -1,6 +1,6 @@
 /*CSS*/
 body {
-  background: #212529;
+  background: #227ad3;
   color: #f8f9fa;
   
 }
@@ -47,7 +47,7 @@ font-family: 'Lato', sans-serif;
 .flex-outer button{
 border-radius: 25px;
 border: 2px solid #f8f9fa;
-color: #212529;
+color: #227ad3;
 font-family: 'Lato', sans-serif;
 padding: 15px 32px;
 text-align: center;
