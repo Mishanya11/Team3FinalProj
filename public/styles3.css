@@ -53,6 +53,8 @@ p {
   font-size: 16px;
   display: table-cell;
   vertical-align: bottom;
-  justify-content: bottom;
+  position: relative:
+  bottom: 0;
+  p
   }
 
