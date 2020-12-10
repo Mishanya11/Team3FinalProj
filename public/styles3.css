@@ -23,7 +23,8 @@ p {
   font-family: 'Lato', sans-serif;
 }
 button {
-    border: none;
+    border-radius: 25px;
+    border: 2px solid #f8f9fa;
     color: #212529;
     font-family: 'Lato', sans-serif;
     padding: 15px 32px;
