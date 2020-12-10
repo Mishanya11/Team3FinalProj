@@ -6,7 +6,7 @@ body {
   }
   h1 {
     text-align: center;
-    align-items:center;
+    align-items: center;
     color:#f8f9fa;
     font-family: 'Lato', sans-serif;
     border-radius: 25px;
@@ -18,8 +18,8 @@ body {
     font-family: 'Lato', sans-serif;
     border-radius: 25px;
     border: 2px solid #f8f9fa;
-    text-align:center;
-    align-items:center;
+    text-align: center;
+    align-items: center;
     width: 100px;
     height: 60px;
   }
@@ -27,6 +27,11 @@ p {
   text-align: center;
   color: #f8f9fa;
   font-family: 'Lato', sans-serif;
+}
+.wrapper {
+  display:flex;
+  vertical-align: bottom;
+  align-items: center;
 }
 
 .flex-outer button{
@@ -36,7 +41,6 @@ p {
   font-family: 'Lato', sans-serif;
   padding: 15px 32px;
   text-align: center;
-  text-align: space-between;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
