@@ -26,11 +26,9 @@ h2 {
     font-family: 'Lato', sans-serif;
     border-radius: 25px;
     border: 2px solid #f8f9fa;
-    font-size: 7rem;
+    font-size: 5rem;
     text-align: center;
     font-weight: 800;
-    width: 100px;
-    height: 60px;
     margin: 0px 50px 0px 50px;
     padding-top: 0px;
   }
