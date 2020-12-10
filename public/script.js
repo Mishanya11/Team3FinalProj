@@ -1,10 +1,4 @@
-<<<<<<< HEAD
 const endpoint = "https://data.princegeorgescountymd.gov/resource/wb4e-w4nf.json";
-=======
-//it's either this one
-
-const endpoint = "https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json";
->>>>>>> 4a5f65c0813bbdc41acaf4951e3fe0dbbb1c3267
 const stuff = [];
 
 fetch (endpoint)
