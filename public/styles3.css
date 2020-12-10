@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-flow: row wrap;
   }
+
   h1 {
     text-align: center;
     color:#f8f9fa;
@@ -51,5 +52,6 @@ p {
   font-size: 16px;
   display: table-cell;
   vertical-align: bottom;
+  justify-content: bottom;
   }
 
