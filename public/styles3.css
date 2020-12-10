@@ -18,6 +18,11 @@ body {
     width: 200px;
     height: 150px;
   }
+p {
+  text-align: center;
+  color: #212529;
+  font-family: 'Lato', sans-serif;
+}
 button {
     border: none;
     color: #212529;
