@@ -30,3 +30,10 @@ const results = document.querySelector(".results");
 
 searchInput.addEventListener('change', displayMatches);
 searchInput.addEventListener('keyup', displayMatches);
+
+var heatMapPoints = [];
+json.features.forEach(function(incident_case_id) {
+  count_crime = stuff.count(incident_case_id.clearance_code_inc_type);
+  heatMapPoints.push([incident_case_id.location.latitude, incident_case_id.location.longitude, count_crime]);
+});
+var heat = L.heatLayer(heatMapPoints, {radius: 25}).addTo(map);
