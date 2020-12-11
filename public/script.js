@@ -1,16 +1,29 @@
 const endpoint = "https://data.princegeorgescountymd.gov/resource/wb4e-w4nf.json";
-const stuff = [];
+const crimes = [];
 
-fetch (endpoint)
-.then(blob => blob.json())
-.then(data => stuff.push(...data))
+fetch(endpoint)
+    .then(blob => blob.json())
+    .then(data => crimes.push(...data))
 
-function findMatches(wordtoMatch, stuff){ 
-  return stuff.filter(resta =>{
-    const regex = new RegExp(wordtoMatch, 'gi');
-    return resta.category.match(regex) || resta.name.match(regex)
-});
+function findMatches(wordToMatch, crimes) {
+    return crimes.filter(place => {
+        const regex = new RegExp(wordToMatch, 'gi')
+        return place.street_address.match(regex) || place.date.match(regex)
+    });
+}
 
+function displayMatches(){
+    const matchArray = findMatches(this.value, restaurants);
+    const html = matchArray.map(place => {
+        return `
+            <li>
+                <span class="street_address">${place.street_address}<br></span>
+                <span class="clearance_code_inc_type">${place.clearance_code_inc_type}<br></span>
+                <span class="date">${place.date}<br></span>
+            </li>
+        `;
+    }).join('');
+    suggestions.innerHTML = html;
 }
 function displayMatches() {
     const matchArray = findMatches(this.value, stuff);
