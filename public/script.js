@@ -5,7 +5,7 @@ fetch(endpoint)
     .then(blob => blob.json())
     .then(data => crimes.push(...data))
 
-function findMatches(wordToMatch, restaurants) {
+function findMatches(wordToMatch, crimes) {
     return crimes.filter(place => {
         const regex = new RegExp(wordToMatch, 'gi')
         return place.street_address.match(regex) || place.date.match(regex)
