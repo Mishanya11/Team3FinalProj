@@ -1,31 +1,17 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-      <title>377 Final App</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJuIqy7X_CIy3F0dWkWeq1FHbl0F_-09s&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
-    
-  </head>
-  <body>
-    <div class = "header">
-        <h1>Home</h1>
-    </div>
-    <div class="wrapper">
-      <div class="container flex-outer">
-        <div class="header">
-        </div>
-          <button
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>377 Final Project Group 3</title>
+    <link href="style.css" rel="stylesheet" type ="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class = "container">
+    <div class = "row">
+        <div class ="header">
+            <h1>PG County Crime Prevention</h1>
+            <button
             id = "AboutButton"
             type="reset"
             class="resetButton"
@@ -43,37 +29,37 @@
             class="resetButton"
             name="resetButton"
           >Documentation</button>
-      </div>
-    </div>
+        </div>   
+        <form>
+        <input class = "textinput" type = "text" placeholder="filter for stuff">
+        </form>
+        <div class = "results">
+            <ul>
+                <li>
+                </li>
+            </ul>
+        </div>
+     </div>
 
-    <div id="map">
+</div>
+<script src = "script.js"> </script>
 
-    </div>
-    <script>google.maps.event.addDomListener(window, 'load', initialize);</script>
-    <script src="script.js"></script>
-    <script src="canvasjs.min.js"></script>
+<script type="text/javascript">
+  document.getElementById("DocButton").onclick = function () {
+      location.href = "https://team3inst377finalproject.herokuapp.com/documentation.html";
+  };
+</script>
 
-    <script type="text/javascript">
-      document.getElementById("DocButton").onclick = function () {
-          location.href = "https://team3inst377finalproject.herokuapp.com/documentation.html";
-      };
-    </script>
+<script type="text/javascript">
+  document.getElementById("HomeButton").onclick = function () {
+      location.href = "https://team3inst377finalproject.herokuapp.com";
+  };
+</script>
 
-    <script type="text/javascript">
-      document.getElementById("HomeButton").onclick = function () {
-          location.href = "https://team3inst377finalproject.herokuapp.com";
-      };
-    </script>
-
-    <script type="text/javascript">
-      document.getElementById("AboutButton").onclick = function () {
-          location.href = "https://team3inst377finalproject.herokuapp.com/about.html";
-      };
-    </script>
-    
-  </body>
+<script type="text/javascript">
+  document.getElementById("AboutButton").onclick = function () {
+      location.href = "https://team3inst377finalproject.herokuapp.com/about.html";
+  };
+</script>
+</body>
 </html>
-
-<!--
-  for michael: https://developers.google.com/maps/documentation/javascript/controls#maps_control_disableUI-typescript
- -->

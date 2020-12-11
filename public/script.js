@@ -1,16 +1,3 @@
-import { Loader } from "@googlemaps/js-api-loader"
-const loader = new Loader({
-  apiKey: "AIzaSyDrBA-BFDn-pRnv1tdx-iQMNCFSAsX3kFg",
-  version: "weekly",
-  ...additionalOptions,
-});
-loader.load().then(() => {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
-  });
-});
-
 const endpoint = "https://data.princegeorgescountymd.gov/resource/wb4e-w4nf.json";
 const stuff = [];
 
@@ -25,23 +12,22 @@ function findMatches(wordtoMatch, stuff){
 });
 
 }
-
-let map, heatmap;
-
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 13,
-    center: { lat: 37.775, lng: -122.434 },
-    mapTypeId: "satellite",
-  });
-  heatmap = new google.maps.visualization.HeatmapLayer({
-    data: getPoints(),
-    map: map,
-  });
+function displayMatches() {
+    const matchArray = findMatches(this.value, stuff);
+    const html = matchArray.map(resta => {
+        return `
+        <li>
+            <span class = "name">${resta.name}</span>
+            <span class = "category">${resta.category}</span>
+            <span class ="address">${resta.address_line_1}
+            <span class = "address">${resta.city}, ${resta.state}, ${resta.zip}</span>
+        </li>
+        `;
+    }).join('');
+    results.innerHTML = html;
 }
+const searchInput = document.querySelector('input');
+const results = document.querySelector(".results");
 
-function getPoints() {
-  return [
-    new google.maps.LatLng(38.9821313173, -76.9378171116)
-  ]
-}
+searchInput.addEventListener('change', displayMatches);
+searchInput.addEventListener('keyup', displayMatches);
