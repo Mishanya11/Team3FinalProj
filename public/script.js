@@ -17,9 +17,11 @@ function displayMatches() {
     const html = matchArray.map(resta => {
         return `
         <li>
-            <span class ="address">${resta.street_address}
+            <span class ="address2">${resta.street_number}</span>
+            <span class ="address">${resta.street_address}</span>
             <span class = "crime">${resta.clearance_code_inc_type}</span>
             <span class = "date">${resta.date}</span>
+            <span class = "incidentID">${resta.incident_case_id}</span>
         </li>
         `;
     }).join('');
