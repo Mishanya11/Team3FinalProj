@@ -31,10 +31,13 @@ const results = document.querySelector(".results");
 searchInput.addEventListener('change', displayMatches);
 searchInput.addEventListener('keyup', displayMatches);
 
+function find_id(stuff){
+  return stuff.incident_case_id;
+}
 
 var heatMapPoints = [];
-json.features.forEach(function(incident_case_id) {
-  count_crime = stuff.count(incident_case_id.clearance_code_inc_type);
-  heatMapPoints.push([incident_case_id.location.latitude, incident_case_id.location.longitude, count_crime]);
+json.features.forEach(function find_id(stuff) {
+  count_crime = stuff.count(stuff.clearance_code_inc_type);
+  heatMapPoints.push([stuff.location.latitude, stuff.location.longitude, count_crime]);
 });
 var heat = L.heatLayer(heatMapPoints, {radius: 25}).addTo(map);
