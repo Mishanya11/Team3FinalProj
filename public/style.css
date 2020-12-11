@@ -90,3 +90,9 @@ h1 {
   font-family: 'Oxanium', cursive;
 
 }
+
+.textinput{
+  margin-bottom: 20px;
+  width: 300px;
+  margin-inline-start: 130px;
+}
