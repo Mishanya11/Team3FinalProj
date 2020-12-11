@@ -14,30 +14,30 @@
             </div>   
             <div class = "header">
                 <div class="header">
-                    <button
-                    id = "AboutButton"
-                    type="reset"
-                    class="resetButton"
-                    name="resetButton"
-                    >About Page</button>
-                    <button
-                    id = "HomeButton"
-                    type="reset"
-                    class="resetButton"
-                    name="resetButton"
-                    >Home/Search</button>
-                    <button
-                    id = "DocButton"
-                    type="reset"
-                    class="resetButton"
-                    name="resetButton"
-                    >Documentation</button>
-                    <button
-                    id = "MapButton"
-                    type="reset"
-                    class="resetButton"
-                    name="resetButton"
-                    >Heatmap</button>
+                        <button
+                        id = "HomeButton"
+                        type="reset"
+                        class="resetButton"
+                        name="resetButton"
+                      >Home/Search</button>
+                      <button
+                              id = "MapButton"
+                              type="reset"
+                              class="resetButton"
+                              name="resetButton"
+                          >Heatmap</button>
+                          <button
+                            id = "DocButton"
+                            type="reset"
+                            class="resetButton"
+                            name="resetButton"
+                          >Documentation</button>
+                          <button
+                            id = "AboutButton"
+                            type="reset"
+                            class="resetButton"
+                            name="resetButton"
+                          >About</button>
                 </div>
             </div>
             <form>
@@ -68,5 +68,19 @@
             location.href = "https://team3inst377finalproject.herokuapp.com/heatmap.html";
         };
     </script>
+    <script src="leaflet-heat.js"></script>
+    <script>
+    
+        var map = L.map('map').setView([-37.87, 175.475], 12);
+        
+        var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map);
+        
+        addressPoints = addressPoints.map(function (p) { return [p[0], p[1]]; });
+        
+        var heat = L.heatLayer(addressPoints).addTo(map);
+        
+        </script>
 </body>
 </html>
