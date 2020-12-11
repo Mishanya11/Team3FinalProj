@@ -6,11 +6,18 @@ body {
 }
   
 .header {
-    margin-bottom: 10px;
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 4px 8px;
+  border-radius: 4px;
 }
+
 .wrapper {
   display: flex;
   flex-direction: column;
