@@ -1,109 +1,40 @@
 /*CSS*/
 body {
-  background: #227ad3;
-  color: #f8f9fa;
-  
+  background: rgb(219, 80, 38);
 }
 
-#map {
-  height: 100%;
+.wrapper {
+  display: flex;
+  flex-direction: column;
 }
+
+@media (min-width:1600px){
+.container {
+  min-height: 100%;
+  justify-content: center;
+  align-content: space-between;
+}}
+
+@media (min-width:640px){
+  .container {
+    min-height: 100%;
+    justify-content: space-evenly;
+    align-content: space-between;
+  }}
 
 .header {
-  margin-bottom: 10px;
+  color: #fff;
   display: flex;
-  flex-flow: row wrap;
-  padding: 0px;
-  text-align: center;
-}
-
-h1 {
-  width: 500px;
-  margin: 0 auto;
-  text-align: center;
-  color:#f8f9fa;
-  font-family: 'Lato', sans-serif;
-  border-radius: 35px;
-  border: 2px solid #f8f9fa;
-  font-size: 4.5rem;
-
-}
-
-h2 {
-  font-family: 'Lato', sans-serif;
-  border-radius: 35px;
-  border: 2px solid #f8f9fa;
-  font-size: 7rem;
-  text-align: center;
-  font-weight: 800;
-  width: 100px;
-  height: 60px;
-  margin: 0px 50px 0px 50px;
-  padding-top: 0px;
-}
-
-p {
-text-align: center;
-color: #f8f9fa;
-font-family: 'Lato', sans-serif;
-}
-
-/*
-#AboutButton{
-  width: 300px;
-  height: 40px;
-}
-
-#HomeButton{
-  width: 300px;
-  height: 40px;
-}
-
-#DocButton{
-  width: 300px;
-  height: 40px;
-}*/
-
-button {
-  font-size: 14px;
-  height: 25px;
-  width: 25px;
-  text-align: center;
-  vertical-align: middle;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*.wrapper {
-  text-align: center;
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-} */
-
-.flex-outer button{
-  border-radius: 35px;
-  border: 2px solid #f8f9fa;
-  color: #227ad3;
-  font-family: 'Lato', sans-serif;
-  padding: 15px 32px;
-  text-align: center;
-}
-
-.navContainer {
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  margin: 0 auto;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 4px 8px;
+  border-radius: 4px;
 }
 
-.search{
-  margin-bottom: 20px;
-  width: 300px;
-  margin-inline-start: 130px;
-}
 
 .results{
   align-items: center;
@@ -120,7 +51,17 @@ button {
   color: white;
 }
 
-.container input {
+li{
+  border: 2px solid black;
+  margin-top: 2px;
+  justify-content: start;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 10px;
+  flex-flow: row wrap;
+  white-space: pre-line;
+}
+.row input {
   border-radius: 3px;
   display: block;
   margin: 0 auto;
@@ -130,27 +71,22 @@ button {
   justify-content: space-evenly;
 }
 
-@media (min-width:1600px){
-  .wrapper {
-    min-height: 100%;
-    justify-content: center;
-    align-content: space-between;
-  }}
+/* New for Lab 7 */
+h1 {
+  margin: 20px 50px;
+  padding: 5 25px;
+  min-height: 75px;
+  background-color: rgb(163, 148, 245);
+  color: white;
+  display: flex;
   
-  @media (min-width:640px){
-    .wrapper {
-      min-height: 100%;
-      justify-content: space-evenly;
-      align-content: space-between;
-    }}
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 4em;
+  text-transform: capitalize;
+  flex-wrap: nowrap;
+  border-radius: 4px;
+  font-family: 'Oxanium', cursive;
 
-    li{
-      border: 2px solid black;
-      margin-top: 2px;
-      justify-content: start;
-      margin-left: 0px;
-      margin-right: 0px;
-      padding: 10px;
-      flex-flow: row wrap;
-      white-space: pre-line;
-    }
+}

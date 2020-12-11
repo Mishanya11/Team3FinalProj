@@ -1,4 +1,4 @@
-const endpoint = "https://data.princegeorgescountymd.gov/resource/wb4e-w4nf.json";
+const endpoint = "https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json";
 const stuff = [];
 
 fetch (endpoint)
@@ -6,21 +6,21 @@ fetch (endpoint)
 .then(data => stuff.push(...data))
 
 function findMatches(wordtoMatch, stuff){ 
-  return stuff.filter(crimes =>{
+  return stuff.filter(resta =>{
     const regex = new RegExp(wordtoMatch, 'gi');
-    return crimes.category.match(regex) || crimes.name.match(regex)
+    return resta.category.match(regex) || resta.name.match(regex)
 });
 
 }
 function displayMatches() {
     const matchArray = findMatches(this.value, stuff);
-    const html = matchArray.map(crimes => {
+    const html = matchArray.map(resta => {
         return `
         <li>
-            <span class = "name">${crimes.name}</span>
-            <span class = "category">${crimes.category}</span>
-            <span class ="address">${crimes.address_line_1}
-            <span class = "address">${crimes.city}, ${crimes.state}, ${crimes.zip}</span>
+            <span class = "name">${resta.name}</span>
+            <span class = "category">${resta.category}</span>
+            <span class ="address">${resta.address_line_1}
+            <span class = "address">${resta.city}, ${resta.state}, ${resta.zip}</span>
         </li>
         `;
     }).join('');
