@@ -62,11 +62,13 @@ body {
   font-weight: bold;
   font-size: 2em;
   font-family: "Bebas Neue";
-  background: linear-gradient(90deg, rgb(20, 17, 70, 1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  background-color: rgb(163, 148, 245);
+  background: linear-gradient(90deg, rgb(163, 148, 245), 0%, rgb(185, 173, 255) 35%, rgb(210, 203, 250) 100%);
   list-style-type: none;
   margin-left: 50px;
   margin-right: 50px;
   color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 li{
@@ -79,6 +81,7 @@ li{
   flex-flow: row wrap;
   white-space: pre-line;
 }
+
 .row input {
   border-radius: 3px;
   display: block;
@@ -105,6 +108,20 @@ h1 {
   border-radius: 4px;
   font-family: "Bebas Neue";
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+button {
+  background-color: rgb(163, 148, 245);
+  font-family: "Bebas Neue";
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 16px;
+  padding: 10px 24px;
+  border-radius: 12px;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .textinput{
