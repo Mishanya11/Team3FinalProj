@@ -40,4 +40,5 @@ json.features.forEach(function find_id(stuff) {
   count_crime = stuff.count(stuff.clearance_code_inc_type);
   heatMapPoints.push([stuff.location.latitude, stuff.location.longitude, count_crime]);
 });
+console.log(heatMapPoints);
 var heat = L.heatLayer(heatMapPoints, {radius: 25}).addTo(map);
