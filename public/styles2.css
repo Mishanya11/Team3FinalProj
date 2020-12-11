@@ -19,7 +19,7 @@ body {
   align-items: center;
   margin: 0;
   margin-bottom: 5px;
-  padding: 6px 8px;
+  padding: 4px 8px;
   border-radius: 4px;
 }
 
@@ -38,24 +38,24 @@ body {
       align-content: space-between;
   }}
 
-h1 {
-  border: 2px solid black;
-  margin: 20px 50px;
-  padding: 5 35px;
-  min-height: 75px;
-  background-color: rgb(163, 148, 245);
-  color: white;
-  display: flex;
-  
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 4em;
-  border-radius: 4px;
-  flex-wrap: nowrap;
-  font-family: "Bebas Neue";
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
+  h1 {
+    border: 2px solid black;
+    margin: 20px 50px;
+    padding: 5 25px;
+    min-height: 75px;
+    background-color: rgb(163, 148, 245);
+    color: white;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 4em;
+    flex-wrap: nowrap;
+    border-radius: 4px;
+    font-family: "Bebas Neue";
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
 
 h2 {
   border-radius: 25px;
