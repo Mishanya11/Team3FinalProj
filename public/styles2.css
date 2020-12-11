@@ -46,6 +46,7 @@ body {
 
 h1 {
   border: 2px solid black;
+  border-radius: 25px;
   margin: 20px 50px;
   padding: 5 25px;
   min-height: 75px;
@@ -58,7 +59,6 @@ h1 {
   font-weight: bold;
   font-size: 4em;
   flex-wrap: nowrap;
-  border-radius: 4px;
   font-family: "Bebas Neue";
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
