@@ -91,3 +91,16 @@ button {
   padding: 15px 32px;
   text-align: center;
 }
+
+.navContainer {
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.search{
+  margin-bottom: 20px;
+  width: 300px;
+  margin-inline-start: 130px;
+}
