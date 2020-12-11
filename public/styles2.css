@@ -88,6 +88,12 @@ h2 {
   font-family: "Bebas Neue";
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+p {
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 22px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 
 button {
   background-color: rgb(163, 148, 245);
@@ -103,11 +109,18 @@ button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.textinput {
-  border: 2px solid black;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  width: 400px;
-  margin-inline-start: 50px;
-  padding: 10px;
+.flex-outer{
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-outer button {
+  background-color: rgb(163, 148, 245);
+  font-family: "Bebas Neue";
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 16px;
+  padding: 10px 24px;
+  border-radius: 12px;
+
 }
