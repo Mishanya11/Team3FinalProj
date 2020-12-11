@@ -8,7 +8,7 @@ fetch (endpoint)
 function findMatches(wordtoMatch, stuff){ 
   return stuff.filter(resta =>{
     const regex = new RegExp(wordtoMatch, 'gi');
-    return resta.category.match(regex) || resta.name.match(regex)
+    return resta.clearance_code_inc_type.match(regex) || resta.date.match(regex)
 });
 
 }
