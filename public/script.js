@@ -6,21 +6,21 @@ fetch (endpoint)
 .then(data => stuff.push(...data))
 
 function findMatches(wordtoMatch, stuff){ 
-  return stuff.filter(resta =>{
+  return stuff.filter(crimes =>{
     const regex = new RegExp(wordtoMatch, 'gi');
-    return resta.category.match(regex) || resta.name.match(regex)
+    return crimes.category.match(regex) || crimes.name.match(regex)
 });
 
 }
 function displayMatches() {
     const matchArray = findMatches(this.value, stuff);
-    const html = matchArray.map(resta => {
+    const html = matchArray.map(crimes => {
         return `
         <li>
-            <span class = "name">${resta.name}</span>
-            <span class = "category">${resta.category}</span>
-            <span class ="address">${resta.address_line_1}
-            <span class = "address">${resta.city}, ${resta.state}, ${resta.zip}</span>
+            <span class = "name">${crimes.name}</span>
+            <span class = "category">${crimes.category}</span>
+            <span class ="address">${crimes.address_line_1}
+            <span class = "address">${crimes.city}, ${crimes.state}, ${crimes.zip}</span>
         </li>
         `;
     }).join('');
