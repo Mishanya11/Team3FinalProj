@@ -1,47 +1,68 @@
 /*CSS*/
 body {
-    background: #227ad3;
-    color: #f8f9fa;
-    
-  }
+  background: rgb(219, 80, 38);
+  font-family: "Bebas Neue";
+  color: #f8f9fa;
+}
   
-  .header {
+.header {
     margin-bottom: 10px;
     display: flex;
     flex-flow: row wrap;
     text-align: center;
-  }
+}
 
-  h1 {
+h1 {
     width: 500px;
     margin: 0 auto;
     text-align: center;
-    text-align: center;
     color:#f8f9fa;
-    font-family: 'Lato', sans-serif;
     border-radius: 35px;
-    border: 2px solid #f8f9fa;
+    border: 2px solid black;
+    background-color: rgb(163, 148, 245);
+    font-family: "Bebas Neue";
     font-size: 4.5rem;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     
-  }
+}
 
-  h2 {
-      font-family: 'Lato', sans-serif;
-      border-radius: 25px;
-      border: 2px solid #f8f9fa;
-      font-size: 4rem;
-      text-align: center;
-      font-weight: 800;
-      margin-left: 200px;
-      margin-right: 200px;
-      padding-top: 0px;
-    }
+h2 {
+    border-radius: 25px;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 800;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 0px;
+    border: 2px solid black;
+    background-color: rgb(163, 148, 245);
+    font-family: "Bebas Neue";
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 
 p {
   text-align: center;
-  color: #f8f9fa;
-  font-family: 'Lato', sans-serif;
+  font-family: "Bebas Neue";
+  font-size: 22px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+
+.flex-outer button {
+  background-color: rgb(163, 148, 245);
+  font-family: "Bebas Neue";
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 16px;
+  padding: 10px 24px;
+  border-radius: 12px;
+
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*Old Button with former designs
 
 button {
   font-size: 14px;
@@ -61,5 +82,5 @@ button {
   font-family: 'Lato', sans-serif;
   padding: 15px 32px;
   text-align: center;
-  }
-
+}
+*/
