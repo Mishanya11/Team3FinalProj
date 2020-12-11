@@ -12,20 +12,7 @@ function findMatches(wordtoMatch, stuff){
 });
 
 }
-function displayMatches() {
-    const matchArray = findMatches(this.value, stuff);
-    const html = matchArray.map(resta => {
-        return `
-        <li>
-            <span class = "name">${resta.name}</span>
-            <span class = "category">${resta.category}</span>
-            <span class ="address">${resta.address_line_1}
-            <span class = "address">${resta.city}, ${resta.state}, ${resta.zip}</span>
-        </li>
-        `;
-    }).join('');
-    results.innerHTML = html;
-}
+
 const searchInput = document.querySelector('input');
 const results = document.querySelector(".results");
 
