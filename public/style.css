@@ -41,20 +41,24 @@ h2 {
   margin: 0px 50px 0px 50px;
   padding-top: 0px;
 }
+
 p {
 text-align: center;
 color: #f8f9fa;
 font-family: 'Lato', sans-serif;
 }
+
 /*
 #AboutButton{
   width: 300px;
   height: 40px;
 }
+
 #HomeButton{
   width: 300px;
   height: 40px;
 }
+
 #DocButton{
   width: 300px;
   height: 40px;
