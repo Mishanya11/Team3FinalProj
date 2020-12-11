@@ -1,6 +1,6 @@
 /*CSS*/
 body {
-  background: rgb(219, 80, 38);
+  background: #1E90FF;
   font-family: "Bebas Neue";
 
 }
@@ -8,6 +8,20 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; 
 }
 
 .header {
@@ -21,6 +35,8 @@ body {
   margin-bottom: 5px;
   padding: 4px 8px;
   border-radius: 4px;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 @media (min-width:960px){
@@ -38,23 +54,24 @@ body {
       align-content: space-between;
   }}
 
-h1 {
-  border: 2px solid black;
-  margin: 20px 50px;
-  padding: 5 25px;
-  min-height: 75px;
-  background-color: rgb(163, 148, 245);
-  color: white;
-  display: flex;
-  
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 4em;
-  flex-wrap: nowrap;
-  font-family: "Bebas Neue";
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
+  h1 {
+    border: 2px solid black;
+    margin: 20px 50px;
+    padding: 5 25px;
+    min-height: 75px;
+    background-color: rgb(163, 148, 245);
+    color: white;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 4em;
+    flex-wrap: nowrap;
+    border-radius: 4px;
+    font-family: "Bebas Neue";
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
 
 h2 {
   border-radius: 25px;
