@@ -83,3 +83,14 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
+
+.flex-outer button {
+  background-color: rgb(163, 148, 245);
+  font-family: "Bebas Neue";
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 16px;
+  padding: 10px 24px;
+  border-radius: 12px;
+
+}
