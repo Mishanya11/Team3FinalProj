@@ -1,6 +1,8 @@
 /*CSS*/
 body {
   background: rgb(219, 80, 38);
+  font-family: "Bebas Neue";
+
 }
 
 .wrapper {
@@ -71,7 +73,6 @@ li{
   justify-content: space-evenly;
 }
 
-/* New for Lab 7 */
 h1 {
   margin: 20px 50px;
   padding: 5 25px;
@@ -84,15 +85,15 @@ h1 {
   justify-content: center;
   font-weight: bold;
   font-size: 4em;
-  text-transform: capitalize;
   flex-wrap: nowrap;
   border-radius: 4px;
-  font-family: 'Oxanium', cursive;
-
+  font-family: "Bebas Neue";
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .textinput{
   margin-bottom: 20px;
   width: 300px;
   margin-inline-start: 130px;
+  padding: 10px;
 }
