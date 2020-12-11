@@ -9,12 +9,6 @@
       integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
       crossorigin="anonymous"
     ></script>
-
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrBA-BFDn-pRnv1tdx-iQMNCFSAsX3kFg&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
     
   </head>
   <body>
@@ -46,10 +40,14 @@
       </div>
     </div>
 
-    <div id="map">
+    <input type="text" class="search" placeholder="Filter Restaurant by Name or Category..."></input>
 
+    <div class="navContainer">
+        <ul class="suggestions">
+        
+        </ul>
     </div>
-    <script>google.maps.event.addDomListener(window, 'load', initialize);</script>
+
     <script src="script.js"></script>
     <script src="canvasjs.min.js"></script>
 
@@ -73,7 +71,3 @@
     
   </body>
 </html>
-
-<!--
-  for michael: https://developers.google.com/maps/documentation/javascript/controls#maps_control_disableUI-typescript
- -->
