@@ -29,6 +29,6 @@ function initMap() {
 
 function getPoints() {
   return [
-    new google.maps.LatLng(37.782551, -122.445368)
+    new google.maps.LatLng(38.9821313173, -76.9378171116)
   ]
 }
