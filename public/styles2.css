@@ -52,6 +52,7 @@ h1 {
   font-weight: bold;
   font-size: 4em;
   flex-wrap: nowrap;
+  border-radius: 4px;
   font-family: "Bebas Neue";
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }

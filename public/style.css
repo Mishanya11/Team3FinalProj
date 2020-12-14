@@ -96,7 +96,7 @@ li{
 h1 {
   border: 2px solid black;
   margin: 20px 50px;
-  padding: 5 25px;
+  padding: 0 25px;
   min-height: 75px;
   background-color: rgb(255, 148, 25);
   color: white;
