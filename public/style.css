@@ -76,7 +76,7 @@ li{
   font-family: "Bebas Neue";
   font-weight: bold;
   font-size: 2em;
-  background-color: rgb(255, 148, 25);
+  background-color: #E86252;
   background: linear-gradient(90deg, rgb(255, 148, 25), 0%, rgb(253, 158, 49) 35%, rgb(253, 177, 91) 100%);
   list-style-type: none;
   color: white;
