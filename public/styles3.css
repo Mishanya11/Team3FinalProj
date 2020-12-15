@@ -1,12 +1,12 @@
 /*CSS*/
   body {
-    background: #1E90FF;
+    background: #EE2677;
     font-family: "Bebas Neue";
-    color: #f8f9fa;
+    color: #EEEBD0;
   }
     
   .header {
-    color: #fff;
+    color: #EEEBD0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -44,8 +44,8 @@
     margin: 20px 50px;
     padding: 0 25px;
     min-height: 75px;
-    background-color: rgb(255, 148, 25);
-    color: white;
+    background-color: #E86252;
+    color: #EEEBD0;
     display: flex;
     
     align-items: center;
@@ -68,7 +68,7 @@
     padding-top: 0px;
     
     border: 2px solid black;
-    background-color: rgb(255, 148, 25);
+    background-color: #E86252;
     font-family: "Bebas Neue";
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   }
@@ -81,9 +81,9 @@
   }
 
   button {
-    background-color: rgb(255, 148, 25);
+    background-color: #E87EA1;
     font-family: "Bebas Neue";
-    color: white;
+    color: #EBB3A9;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-size: 16px;
     padding: 10px 24px;
@@ -101,9 +101,9 @@
   }
 
   .flex-outer button {
-    background-color: rgb(255, 148, 25);
+    background-color: #E87EA1;
     font-family: "Bebas Neue";
-    color: white;
+    color: #EBB3A9;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-size: 16px;
     padding: 10px 24px;
