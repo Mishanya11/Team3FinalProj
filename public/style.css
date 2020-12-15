@@ -10,7 +10,7 @@ body {
   flex-direction: column;
 }
 
-/*.container {
+.container {
   position: relative;
   width: 100%;
   max-width: 960px;
@@ -22,7 +22,7 @@ body {
   width: 100%;
   float: left;
   box-sizing: border-box; 
-}*/
+}
 
 /*Need to make this style work for smaller screens*/
 
