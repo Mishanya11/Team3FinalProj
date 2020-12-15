@@ -15,7 +15,15 @@ The app is intended for any desktop browser with any version attached to it and 
 
 DEVELOPER MANUAL
 
+##Accessing the App
+Our application code can be found at: https://github.com/Mishanya11/Team3FinalProj
 
+##Run App on a server
+Our code can be accessed by cloning the repository and it can be run on the server at: https://team3inst377finalproject.herokuapp.com/
+We do not currently have any tests that can be run for our code. 
+
+##API
+The API for our application can be found at:
 
 
 
