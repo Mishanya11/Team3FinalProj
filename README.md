@@ -13,7 +13,7 @@ https://team3inst377finalproject.herokuapp.com/
 ##Target Browsers
 The app is intended for any desktop browser with any version attached to it and any iPhone 8 browser. 
 
-#DEVELOPER MANUAL
+
 
 ##Accessing the App
 Our application code can be found at: https://github.com/Mishanya11/Team3FinalProj
